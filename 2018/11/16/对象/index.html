@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>第四章对象 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1.从数组到对象 元素、属性、方法与成员 访问对象属性 调用对象方法 修改属性与方法 使用this值 构造器函数 全局对象 构造器属性 instanceof操作符 返回对象的函数 传递对象 比较对象 控制台中的对象  2.内建对象 object Array Function  函数对象的属性 函数对象的方法 call()与apply() 重新认识aguments对象 推断对象类型   Boolea">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第四章对象">
+<meta property="og:url" content="http://yoursite.com/2018/11/16/对象/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.从数组到对象 元素、属性、方法与成员 访问对象属性 调用对象方法 修改属性与方法 使用this值 构造器函数 全局对象 构造器属性 instanceof操作符 返回对象的函数 传递对象 比较对象 控制台中的对象  2.内建对象 object Array Function  函数对象的属性 函数对象的方法 call()与apply() 重新认识aguments对象 推断对象类型   Boolea">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-16T09:32:03.115Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="第四章对象">
+<meta name="twitter:description" content="1.从数组到对象 元素、属性、方法与成员 访问对象属性 调用对象方法 修改属性与方法 使用this值 构造器函数 全局对象 构造器属性 instanceof操作符 返回对象的函数 传递对象 比较对象 控制台中的对象  2.内建对象 object Array Function  函数对象的属性 函数对象的方法 call()与apply() 重新认识aguments对象 推断对象类型   Boolea">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,97 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-继承" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/16/继承/" class="article-date">
-  <time datetime="2018-11-16T09:40:45.000Z" itemprop="datePublished">2018-11-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/16/继承/">继承</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-原型链"><a href="#1-原型链" class="headerlink" title="1.原型链"></a>1.原型链</h2><ul>
-<li>原型链示例</li>
-<li>将共享属性迁移到原型链中</li>
-</ul>
-<h2 id="2-只继承于原型"><a href="#2-只继承于原型" class="headerlink" title="2.只继承于原型"></a>2.只继承于原型</h2><h2 id="3-子对象访问父对象的方式（uber）"><a href="#3-子对象访问父对象的方式（uber）" class="headerlink" title="3.子对象访问父对象的方式（uber）"></a>3.子对象访问父对象的方式（uber）</h2><h2 id="4-将继承部分封装成函数"><a href="#4-将继承部分封装成函数" class="headerlink" title="4.将继承部分封装成函数"></a>4.将继承部分封装成函数</h2><h2 id="5-属性拷贝"><a href="#5-属性拷贝" class="headerlink" title="5.属性拷贝"></a>5.属性拷贝</h2><h2 id="6-请小心处理引用拷贝"><a href="#6-请小心处理引用拷贝" class="headerlink" title="6.请小心处理引用拷贝"></a>6.请小心处理引用拷贝</h2><h2 id="7-对象之间的继承"><a href="#7-对象之间的继承" class="headerlink" title="7.对象之间的继承"></a>7.对象之间的继承</h2><h2 id="8-深拷贝"><a href="#8-深拷贝" class="headerlink" title="8.深拷贝"></a>8.深拷贝</h2><h2 id="9-object"><a href="#9-object" class="headerlink" title="9.object()"></a>9.object()</h2><h2 id="10-原型继承与属性拷贝的混合应用"><a href="#10-原型继承与属性拷贝的混合应用" class="headerlink" title="10.原型继承与属性拷贝的混合应用"></a>10.原型继承与属性拷贝的混合应用</h2><h2 id="11-多重继承"><a href="#11-多重继承" class="headerlink" title="11.多重继承"></a>11.多重继承</h2><h2 id="12-寄生式继承"><a href="#12-寄生式继承" class="headerlink" title="12.寄生式继承"></a>12.寄生式继承</h2><h2 id="13-构造器借用"><a href="#13-构造器借用" class="headerlink" title="13.构造器借用"></a>13.构造器借用</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/16/继承/" data-id="cjomt0rr900018ouxxikq1hbs" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-原型" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/16/原型/" class="article-date">
-  <time datetime="2018-11-16T09:34:40.000Z" itemprop="datePublished">2018-11-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/16/原型/">原型</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-原型属性"><a href="#1-原型属性" class="headerlink" title="1.原型属性"></a>1.原型属性</h2><ul>
-<li>利用原型添加方法与属性</li>
-<li>使用原型的方法与属性</li>
-<li>自身属性与原型属性</li>
-<li>利用自身属性重写原型属性</li>
-<li>isPrototypeOf()方法</li>
-<li><em>proto</em>链接</li>
-</ul>
-<h2 id="2-扩展内建对象"><a href="#2-扩展内建对象" class="headerlink" title="2.扩展内建对象"></a>2.扩展内建对象</h2><ul>
-<li>关于扩展内建对象的讨论</li>
-<li>原型陷阱</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/16/原型/" data-id="cjomt0rqw00008ouxmoyeyt4w" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-对象" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-对象" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/16/对象/" class="article-date">
   <time datetime="2018-11-16T09:06:08.000Z" itemprop="datePublished">2018-11-16</time>
@@ -163,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/16/对象/">第四章对象</a>
+    <h1 class="article-title" itemprop="name">
+      第四章对象
     </h1>
   
 
@@ -225,11 +139,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2018/11/16/原型/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          原型
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
